@@ -37,7 +37,7 @@ Aplicativo pessoal para cadastro e avaliação da minha biblioteca de livros, co
 
 ## Plano de desenvolvimento (blocos)
 
-- [ ] **Bloco 0** — Preparação do ambiente (Python, venv, editor)
+- [x] **Bloco 0** — Preparação do ambiente (Python, venv, editor)
 - [ ] **Bloco 1** — Schema do banco de dados (tabelas e relações)
 - [ ] **Bloco 2** — CRUD via terminal (sem interface)
 - [ ] **Bloco 3** — Integração com API externa de livros (busca por ISBN)
@@ -45,6 +45,26 @@ Aplicativo pessoal para cadastro e avaliação da minha biblioteca de livros, co
 - [ ] **Bloco 5** — Interface web (Flask)
 - [ ] **Bloco 6** — Gráficos e estatísticas
 - [ ] **Bloco 7** — Experiência tipo app (PWA para iOS)
+
+## Estrutura do projeto
+
+```
+Biblioteca_Project/
+├── src/            # código do app (schema, CRUD, etc. — a partir do Bloco 1)
+├── venv/           # ambiente virtual (ignorado pelo git)
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+O código do projeto fica na pasta `src/` (pacote Python).
+
+## Dependências
+
+As dependências são instaladas **por bloco**, conforme cada etapa precisa delas,
+e o `requirements.txt` é atualizado à medida que novas libs entram. O Bloco 1
+usa apenas `sqlite3`, que já vem embutido no Python, então nenhuma instalação
+extra é necessária ainda.
 
 ## Estrutura do banco (visão inicial)
 
